@@ -1,1 +1,1 @@
-web: node app.js
+web: node ./clase2/app.js
