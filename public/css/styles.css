@@ -268,8 +268,6 @@ input{
     /*Animacion*/
     .fa-truck:hover{
         transform: rotate(-360deg);
-        color: red;
-        
     }
     .fa-truck{
         transition: 1s;
