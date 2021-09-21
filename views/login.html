@@ -42,17 +42,19 @@
         </section>
     </header>
 
-    <main>
+    <main class="mainLogin">
 
-        <form action="/register" method="POST"></form>
-        <label for="nombreDeUsuario">Nombre de usuario/a</label>
-        <input type="text" name="nombre" id="nombreDeUsuario" minlength="4" required><br>
+        <div class="loginCaja">
+            <form action="/register" method="GET"></form>
+            <label for="nombreDeUsuario">Nombre de Usuario/a</label>
+            <input type="text" name="nombre" id="nombreDeUsuario" minlength="4" required><br>
 
-        <label for="contrasena">Contraseña</label>
-        <input type="password" name="contrasena" id="contrasena" alt="strongPass" minlength="4" required><br>
+            <label for="contrasena">Contraseña</label>
+            <input type="password" name="contrasena" id="contrasena" alt="strongPass" minlength="4" required><br>
 
-        <input type="submit" value="ENVIAR">
-        </form>
+            <input type="submit" value="ENVIAR" class="botonEnviar">
+            </form>
+        </div>
     </main>
 
 
