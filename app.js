@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const port = 3000;
-const publicPath = path.join(dirname, './public')
+const publicPath = path.join(__dirname,'./public')
 
 app.use(express.static(publicPath));
 
@@ -11,15 +11,15 @@ app.listen(process.env.PORT || 3000, function() {
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(dirname, './views/home.html'))
+    res.sendFile(path.join(__dirname, './views/home.html'))
 });
 
 app.get('/register', (req, res) => {
-    res.sendFile(path.join(dirname, './views/register.html'))
+    res.sendFile(path.join(__dirname, './views/register.html'))
 });
 
 app.get('/login', (req, res) => {
-    res.sendFile(path.join(dirname, './views/login.html'))
+    res.sendFile(path.join(__dirname, './views/login.html'))
 });
 
 
